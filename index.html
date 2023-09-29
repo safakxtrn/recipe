@@ -50,6 +50,7 @@
             max-width: 600px;
         }
 
+
         .middle-area > * {
             margin: 15px auto 0px auto;
         }
@@ -75,6 +76,12 @@
             padding: 4px;
             border-radius: 5px;
             display: inline;
+        }
+
+        @media only screen and (max-width: 600px) {
+            .resp-info {
+                flex-direction: column;
+            }
         }
 
     </style>
@@ -120,7 +127,7 @@
 
         <div class="middle-area">
 
-            <div style="display: flex; justify-content: space-around;">
+            <div class="resp-info" style="display: flex; justify-content: space-around;">
                 <span> <strong>Kaç Adet: </strong>16</span>
                 <span> <strong>Hazırlama Süresi: </strong>30dk</span>
                 <span> <strong>Menü: </strong>Vejeteryan</span>
